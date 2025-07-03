@@ -1,0 +1,46 @@
+.highlights{
+    background-color: black;
+    width: 200px;
+    transition: 0.3s ease, transform 0.3s ease;
+}
+
+::ng-deep .mat-mdc-tab-header {
+  background-color: whitesmoke;
+  border-radius: 9000px;
+}
+
+::ng-deep .mdc-tab-indicator--active{
+  border-radius: 9000px;
+  background-color: #69c2f0 !important;
+}
+
+::ng-deep .mdc-tab-indicator__content--underline{
+    border: none !important;
+}
+
+::ng-deep .mdc-tab-indicator--active .mdc-tab__text-label {
+    color: white !important;
+}
+
+.tab{
+    inline-size: inherit;
+}
+
+.skill {
+  position: relative;
+  z-index: 1;
+}
+
+.skill::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../assets/background.jpg) !important;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; /* 🔽 adjust opacity here */
+  z-index: -1;
+}

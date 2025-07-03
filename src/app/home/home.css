@@ -1,0 +1,19 @@
+
+.home-container {
+  position: relative;
+  z-index: 1;
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  background-image: url(../../assets/background.jpg) !important;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6; /* 🔽 adjust opacity here */
+  z-index: -1;
+}

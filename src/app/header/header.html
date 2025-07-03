@@ -1,0 +1,42 @@
+<nav
+  class="bg-gray-400 header min-w-screen"
+  [ngClass]="{ scrolled: isScrolled }"
+>
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="flex flex-row gap-3 mt-2">
+      <div class="w-10">
+        <img class="rounded-full" src="/assets/logo.png" />
+      </div>
+      <a href="#" class="text-white text-2xl font-semibold"
+        >Welcome to my code world !</a
+      >
+    </div>
+    <ul class="flex space-x-16 gap-10">
+      <li class="header-tab">
+        <a routerLink="" class="text-white font-bold"
+          ><mat-icon class="py-1 pr-3">home</mat-icon> Home</a
+        >
+      </li>
+      <li class="header-tab">
+        <a routerLink="" fragment="about" class="text-white font-bold"
+          ><mat-icon class="py-1 pr-3">person</mat-icon>About</a
+        >
+      </li>
+      <li class="header-tab">
+        <a routerLink="" fragment="skills" class="text-white font-bold"
+          ><mat-icon class="py-1 pr-3">build</mat-icon>Skills</a
+        >
+      </li>
+      <li class="header-tab">
+        <a routerLink="" fragment="projects" class="text-white font-bold"
+          ><mat-icon class="py-1 pr-3">work</mat-icon>Experience</a
+        >
+      </li>
+      <li class="header-tab">
+        <a routerLink="" fragment="contact" class="text-white font-bold"
+          ><mat-icon class="py-1 pr-3"> contacts</mat-icon>Contact</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

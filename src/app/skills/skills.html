@@ -1,0 +1,52 @@
+<div class="skill"><section class="min-h-screen p-10 ">
+  <h2
+    class="text-3xl font-bold text-blue-900 mb-4 border-b-4 border-blue-500 inline-block"
+  >
+    Skills
+  </h2>
+
+  <mat-tab-group class=" flex flex-row p-5 mat-tab" (selectedIndexChange)="onTabClick($event)">
+    <mat-tab class="bg-cyan-700" label="Programming Language"> </mat-tab>
+    <mat-tab label="Frameworks"></mat-tab>
+    <mat-tab label="Database"> </mat-tab>
+    <mat-tab label="Tools"></mat-tab>
+  </mat-tab-group>
+
+  <div class="flex justify-center">
+    <div class="grid grid-cols-4 w-4/5 place-content-center gap-2 p-3">
+      <div
+        data-aos="zoom-in"
+        *ngFor="let skill of programmingLanguge"
+        [ngClass]="{ highlights: selectedIndex == 0 }"
+        class="p-4 tab transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 inline-block bg-gray-400 text-2xl text-white text-center rounded-xl font-semibold text-sm uppercase"
+      >
+        {{ skill }}
+      </div>
+      <div
+        data-aos="zoom-in"
+        *ngFor="let skill of frameworks"
+        [ngClass]="{ highlights: selectedIndex == 1 }"
+        class="p-4 tab transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 inline-block bg-gray-400 text-2xl text-white text-center rounded-xl font-semibold text-sm uppercase"
+      >
+        {{ skill }}
+      </div>
+      <div
+        data-aos="zoom-in"
+        *ngFor="let skill of database"
+        [ngClass]="{ highlights: selectedIndex == 2 }"
+        class="p-4 tab transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 inline-block bg-gray-400 text-2xl text-white text-center rounded-xl font-semibold text-sm uppercase"
+      >
+        {{ skill }}
+      </div>
+      <span
+        data-aos="zoom-in"
+        *ngFor="let skill of tools"
+        p-5
+        [ngClass]="{ highlights: selectedIndex == 3 }"
+        class="p-4 tab transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 inline-block bg-gray-400 text-2xl text-white text-center rounded-xl font-semibold text-sm uppercase"
+      >
+        {{ skill }}
+      </span>
+    </div>
+  </div>
+</section></div>

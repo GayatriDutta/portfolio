@@ -1,0 +1,32 @@
+.header-tab {
+  border-radius: 10px;
+  padding: 2px;
+  padding-inline: 4px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.header-tab:hover {
+  transform: scale(1.05);
+  background-color:transparent;
+  font-weight: bold;
+  color: #0e469b;
+  box-shadow: 0 4px 20px #0e469b;
+}
+
+.header{
+    position: fixed;
+    background-color: transparent;
+    padding-block: 10px;
+    z-index: 999;
+}
+
+.header.scrolled {
+  background-color: #3a3f49;
+  color: #2a7cf7 !important;
+  box-shadow: 0 2px 10px rgba(31, 23, 23, 0.795);
+}
+
+.header.scrolled .header-tab  {
+  color: #2a7cf7 !important;
+}
