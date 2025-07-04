@@ -1,7 +1,8 @@
 .highlights{
-    background-color: black;
-    width: 200px;
-    transition: 0.3s ease, transform 0.3s ease;
+    background-color: black !important; 
+    min-width: max-content;
+    scale: 1.1;
+    color: azure;
 }
 
 ::ng-deep .mat-mdc-tab-header {
@@ -22,10 +23,6 @@
     color: white !important;
 }
 
-.tab{
-    inline-size: inherit;
-}
-
 .skill {
   position: relative;
   z-index: 1;
@@ -44,3 +41,27 @@
   opacity: 0.4; /* 🔽 adjust opacity here */
   z-index: -1;
 }
+
+.skill-tab{
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;  
+  width: 200px;
+  background-color: rgb(141, 136, 136);
+  font-size: larger;
+  color: white;
+  text-align: center;
+  border-radius: 999px;
+  font-weight: normal;
+}
+
+.skill-tab :hover{
+  transform: translateY(-4px) scale(1.1) !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+
+   

@@ -13,28 +13,28 @@
   </mat-tab-group>
 
   <div class="flex justify-center">
-    <div class="grid grid-cols-4 w-4/5 place-content-center gap-2 p-3">
+    <div class="grid xl:grid-cols-4 md:grid-cols-3 s:grid-cols-2 5 place-content-center gap-2 p-3">
       <div
         data-aos="zoom-in"
         *ngFor="let skill of programmingLanguge"
-        [ngClass]="{ highlights: selectedIndex == 0 }"
-        class="p-4 tab transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 inline-block bg-gray-400 text-2xl text-white text-center rounded-xl font-semibold text-sm uppercase"
+        [ngClass]="{ highlights: selectedIndex == 0, hide: selectedIndex != 0 && mobileView }"
+        class="skill-tab transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110"
       >
         {{ skill }}
       </div>
       <div
         data-aos="zoom-in"
         *ngFor="let skill of frameworks"
-        [ngClass]="{ highlights: selectedIndex == 1 }"
-        class="p-4 tab transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 inline-block bg-gray-400 text-2xl text-white text-center rounded-xl font-semibold text-sm uppercase"
+        [ngClass]="{ highlights: selectedIndex == 1, hide: selectedIndex != 1 && mobileView }"
+        class=" skill-tab transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110"
       >
         {{ skill }}
       </div>
       <div
         data-aos="zoom-in"
         *ngFor="let skill of database"
-        [ngClass]="{ highlights: selectedIndex == 2 }"
-        class="p-4 tab transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 inline-block bg-gray-400 text-2xl text-white text-center rounded-xl font-semibold text-sm uppercase"
+        [ngClass]="{ highlights: selectedIndex == 2, hide: selectedIndex != 2 && mobileView }"
+        class=" skill-tab transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110"
       >
         {{ skill }}
       </div>
@@ -42,8 +42,8 @@
         data-aos="zoom-in"
         *ngFor="let skill of tools"
         p-5
-        [ngClass]="{ highlights: selectedIndex == 3 }"
-        class="p-4 tab transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 inline-block bg-gray-400 text-2xl text-white text-center rounded-xl font-semibold text-sm uppercase"
+        [ngClass]="{ highlights: selectedIndex == 3 , hide: selectedIndex != 3 && mobileView}"
+        class=" skill-tab p-4 tab transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 inline-block bg-gray-400 text-2xl text-white text-center rounded-xl font-semibold text-sm uppercase"
       >
         {{ skill }}
       </span>
