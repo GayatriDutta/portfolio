@@ -10,10 +10,28 @@ import { CommonModule } from '@angular/common';
   styleUrl: './header.css'
 })
 export class Header {
-   isScrolled = false;
+   isScrolled: boolean = false;
+   showMenudropdown: boolean = false ;
+   screenSize : boolean = false;
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled = window.pageYOffset > 50;
+  }
+
+  @HostListener('window:resize', [])
+  onResize() {
+    this.screenSize = window.innerWidth <633;
+  }
+
+  ngOnInit(){
+    this.screenSize = window.innerWidth <633;
+  }
+
+  showMenu(){
+    if(this.screenSize && !this.showMenudropdown){
+      return false;
+    }
+    return true;
   }
 }

@@ -17,3 +17,8 @@
   opacity: 0.6; /* 🔽 adjust opacity here */
   z-index: -1;
 }
+
+.name {
+    color: mediumblue;
+    font-weight: bolder;
+}

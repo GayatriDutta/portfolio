@@ -13,7 +13,7 @@ export class Skills {
 
   @HostListener('window:resize', [])
   onResize() {
-    this.mobileView = window.innerWidth< 537;
+    this.mobileView = window.innerWidth< 633;
   }
   frameworks = ['Angular', 'React', 'Vue JS', 'Nest JS', 'Express JS'];
   programmingLanguge = ['Javascript', 'Node JS', 'Typescript'];
@@ -26,6 +26,6 @@ export class Skills {
   }
 
   ngOnInit() {
-    this.mobileView = window.innerWidth <537;
+    this.mobileView = window.innerWidth <633;
 }
 }

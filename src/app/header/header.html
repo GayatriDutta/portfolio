@@ -2,16 +2,17 @@
   class="bg-gray-400 header min-w-screen"
   [ngClass]="{ scrolled: isScrolled }"
 >
-  <div class="container mx-auto flex justify-between items-center">
-    <div class="flex flex-row gap-3 mt-2">
+  <div class="container flex">
+    <div class="flex flex-row gap-3 mt-2 logo">
       <div class="w-10">
         <img class="rounded-full" src="/assets/logo.png" />
       </div>
-      <a href="#" class="text-white text-2xl font-semibold"
+      <a href="#" class="tag-line text-white text-2xl font-semibold"
         >Welcome to my code world !</a
       >
     </div>
-    <ul class="flex space-x-16 gap-10">
+    <div class="flex justify-center items-center" (click)="showMenudropdown = !showMenudropdown"><button class="hamburger">☰</button></div>
+    <ul *ngIf="showMenu()" (click)="showMenudropdown = !showMenudropdown" class="flex gap-[5vw] justify-space menu" [ngClass]="{}">
       <li class="header-tab">
         <a routerLink="" class="text-white font-bold"
           ><mat-icon class="py-1 pr-3">home</mat-icon> Home</a
