@@ -19,8 +19,7 @@ export class Header {
     this.isScrolled = window.pageYOffset > 50;
     if(this.screenSize ){
       this.showMenudropdown = false;
-    }
-    
+    }    
   }
 
   @HostListener('window:resize', [])

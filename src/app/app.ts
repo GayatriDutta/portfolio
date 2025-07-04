@@ -23,7 +23,7 @@ export class App {
   ngOnInit() {
     if (isPlatformBrowser(this.platformId)) {
       AOS.init({
-        duration: 1500,
+        duration: 2000,
       });
     }
   }
