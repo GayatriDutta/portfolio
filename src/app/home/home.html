@@ -1,34 +1,38 @@
 <div class="home-container">
-  <div class="items-center min-h-screen min-w-screen justify-center home pt-30">
-    <section class="text-center grid justify-center mx-10 ">
+  <div class="main-content min-h-screen min-w-screen home">
+    <section class="sectionA w-full pt-30 pl-2 lg:pl-10 md:px-12 flex flex-col md:flex-row items-start gap-10">
       <div class="">
-        <h1 class=" text-4xl text-center mb-4" data-aos="zoom-in">
-          👋 Hello! I'm</h1>
-          <p class="name text-6xl font-bold">Gayatri Dutta</p>
-        </div>
-      <div class="">
+        <h1 class="font-cursive text-4xl mb-4" data-aos="zoom-in">
+          👋 Hello! I'm
+        </h1>
+        <p class="font-classic name text-7xl font-bold">Gayatri Dutta</p><div class="font-cursive">
         <p class="text-2xl pt-3">I am a</p>
         <p
-          class="pt-1 text-4xl profile uppercase rotating-text"
+          class="pt-1 text-4xl font-classic profile uppercase"
           [class.fade]="fade"
         >
           {{ currentText }}
         </p>
       </div>
+
+      </div>
+      
     </section>
 
-    <section class="text-center py-10">
-      <h1 class="text-5xl mb-4">I break things ....</h1>
-      <p class="text-2xl">then fix them (sometimes into something better)</p>
+    <section class="sectionB text-center pt-10 lg:pl-120">
+      <h1 class="font-cursive text-5xl mb-4">I break things ....</h1>
+      <p class="font-cursive text-2xl px-5">
+        then fix them (sometimes into something better)
+      </p>
+      <div class="pb-6">
+        <a
+          href="../assets/resume.pdf"
+          target="_blank"
+          class="mt-6 inline-block bg-cyan-700 text-white px-6 py-2 rounded hover:bg-cyan-700 transition"
+        >
+          Download Resume
+        </a>
+      </div>
     </section>
-    <div class="grid justify-center pb-6">
-      <a
-        href="../assets/resume.pdf"
-        target="_blank"
-        class="mt-6 inline-block bg-cyan-700 text-white px-6 py-2 rounded hover:bg-cyan-700 transition"
-      >
-        Download Resume
-      </a>
-    </div>
   </div>
 </div>

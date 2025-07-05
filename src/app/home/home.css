@@ -24,9 +24,18 @@
 .profile {
   color: white;
   font-weight: bolder;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   animation-name: example;
   animation-duration: 22s;
   animation-iteration-count: infinite;
 }
+
+.font-cursive {
+  font-family: "Courgette", cursive;
+}
+
+.font-classic {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+
