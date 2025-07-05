@@ -7,34 +7,34 @@
       <div routerLink="" class="w-10 pl-2">
         <img class="" src="/assets/logo.png" />
       </div>
-      <a href="#" class="tag-line text-white text-2xl font-semibold"
+      <a href="#" class=" tag-line text-black text-2xl font-semibold"
         >Welcome to my code world !</a
       >
     </div>
     <div class="flex justify-center items-center " class="hamburger" (click)="showMenudropdown = !showMenudropdown"><img class="rounded-full w-10 pt-1" src="assets/hamburger.png"  ></div>
     <ul *ngIf="showMenu()" (click)="showMenudropdown = !showMenudropdown" class="flex gap-[5vw] justify-space menu" [ngClass]="{}">
       <li class="header-tab">
-        <a routerLink="" class="text-white font-bold"
+        <a routerLink="" class=" tab-pill text-black font-bold"
           ><mat-icon class="py-1 pr-3">home</mat-icon> Home</a
         >
       </li>
       <li class="header-tab">
-        <a routerLink="" fragment="about" class="text-white font-bold"
+        <a routerLink="" fragment="about" class="tab-pill text-black font-bold"
           ><mat-icon class="py-1 pr-3">person</mat-icon>About</a
         >
       </li>
       <li class="header-tab">
-        <a routerLink="" fragment="skills" class="text-white font-bold"
+        <a routerLink="" fragment="skills" class=" tab-pill text-black font-bold"
           ><mat-icon class="py-1 pr-3">build</mat-icon>Skills</a
         >
       </li>
       <li class="header-tab">
-        <a routerLink="" fragment="projects" class="text-white font-bold"
+        <a routerLink="" fragment="projects" class=" tab-pill text-black font-bold"
           ><mat-icon class="py-1 pr-3">work</mat-icon>Experience</a
         >
       </li>
       <li class="header-tab">
-        <a routerLink="" fragment="contact" class="text-white font-bold"
+        <a routerLink="" fragment="contact" class="tab-pill text-black font-bold"
           ><mat-icon class="py-1 pr-3"> contacts</mat-icon>Contact</a
         >
       </li>

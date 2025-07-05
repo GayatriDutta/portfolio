@@ -1,4 +1,3 @@
-
 .home-container {
   position: relative;
   z-index: 1;
@@ -14,27 +13,20 @@
   background-image: url(../../assets/background.jpg) !important;
   background-size: cover;
   background-position: center;
-  opacity: 0.6; /* 🔽 adjust opacity here */
+  opacity: 0.3; /* 🔽 adjust opacity here */
   z-index: -1;
 }
 
 .name {
-    color: mediumblue;
-    font-weight: bolder;
+  color: #00bcff;
 }
 
 .profile {
-  color: rgb(216, 102, 216);
+  color: #00bcff;
   font-weight: bolder;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-style: italic;
   animation-name: example;
-  animation-duration: 30s;
+  animation-duration: 22s;
   animation-iteration-count: infinite;
-}
-
-@keyframes example {
-  100% {
-  transform: scale3d(1.1);
-  }
 }
