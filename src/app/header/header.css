@@ -25,16 +25,11 @@
 
 .header.scrolled {
   background-color: #83979f;
-  color: #00bcff !important;
   box-shadow: 0 2px 10px rgba(31, 23, 23, 0.795);
 }
 
-.header.scrolled .header-tab .tab-pill {
-  color: #00bcff !important;
-}
-
-.header.scrolled .tag-line {
-  color: #00bcff !important;
+.name-line{
+  display: none;
 }
 
 .logo {
@@ -52,7 +47,7 @@
 .hamburger {
   display: none;
   position: absolute;
-  left: 48%;
+  right: 2%;
   top: 0;
   font-size: 40px;
   font-weight: bolder;
@@ -61,20 +56,26 @@
 @media screen and (max-width: 1000px) {
   .tag-line {
     display: none;
-  }
+  }  
 }
 
 @media screen and (max-width: 633px) {
   .menu {
     /* display: none; */
     flex-direction: column;
-    min-width: 300px;
+    width: screen;
     align-items: center;
     padding: 10px;
-    background-color: #5d5f63;
+    background-color: #83979f;
     position: absolute;
-    left: 5%;
-    top:100%
+    left: 0%;
+    right:0%;
+    top:100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .name-line{
+    display: block;
   }
 
   .hamburger {
@@ -82,7 +83,7 @@
   }
 
   .header {
-    background-color: #3a3f49;
+    background-color: #83979f;
     color: white;
   }
 

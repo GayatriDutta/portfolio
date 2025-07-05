@@ -10,19 +10,19 @@
   left: 0;
   min-height: 100%;
   min-width: 100%;
-  background-image: url(../../assets/background.jpg) !important;
+  background-image: url(../../assets/background_blue.jpeg) !important;
   background-size: cover;
   background-position: center;
-  opacity: 0.3; /* 🔽 adjust opacity here */
+  opacity: 1; /* 🔽 adjust opacity here */
   z-index: -1;
 }
 
 .name {
-  color: #00bcff;
+  color: whitesmoke;
 }
 
 .profile {
-  color: #00bcff;
+  color: white;
   font-weight: bolder;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-style: italic;
