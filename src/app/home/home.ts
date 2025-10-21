@@ -12,7 +12,9 @@ texts: string[] = [
     'Full Stack Developer',
     'Front-end Developer',
     'Back-end Developer ',
-    'Angular Developer'
+    'MEAN STACK Developer',
+    'MERN STACK Developer',
+
   ];
   currentText: string = this.texts[0];
   index: number = 0;

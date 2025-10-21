@@ -1,8 +1,9 @@
 .highlights{
-    background-color: black !important; 
+    background-color: rgb(244, 239, 239) !important; 
     min-width: max-content;
     scale: 1.1;
-    color: azure;
+    color: black !important;
+    font-weight:1000 px !important;
 }
 
 ::ng-deep .mat-mdc-tab-header {
@@ -35,10 +36,9 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../../assets/background_blue.jpeg) !important;
+  background-color: #191f2c;
   background-size: cover;
   background-position: center;
-  opacity: 0.4; /* 🔽 adjust opacity here */
   z-index: -1;
 }
 

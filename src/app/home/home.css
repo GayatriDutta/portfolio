@@ -10,7 +10,7 @@
   left: 0;
   min-height: 100%;
   min-width: 100%;
-  background-image: url(../../assets/background_blue.jpeg) !important;
+   background-color: #191f2c;
   background-size: cover;
   background-position: center;
   opacity: 1; /* 🔽 adjust opacity here */
@@ -31,11 +31,11 @@
 }
 
 .font-cursive {
-  font-family: "Courgette", cursive;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .font-classic {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 

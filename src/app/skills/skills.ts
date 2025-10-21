@@ -15,7 +15,7 @@ export class Skills {
   onResize() {
     this.mobileView = window.innerWidth< 633;
   }
-  frameworks = ['Angular', 'React', 'Vue JS', 'Nest JS', 'Express JS'];
+  frameworks = ['React JS', 'Angular', 'Nest JS', 'Express JS'];
   programmingLanguge = ['Javascript', 'Node JS', 'Typescript'];
   database = ['MongoDB', 'Postgresql', 'SQL'];
   tools = ['Git', 'AWS', 'Jira'];
