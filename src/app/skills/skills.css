@@ -13,7 +13,7 @@
 
 ::ng-deep .mdc-tab-indicator--active{
   border-radius: 9000px;
-  background-color: #69c2f0 !important;
+  background-color: oklch(71.5% 0.143 215.221) !important;
 }
 
 ::ng-deep .mdc-tab-indicator__content--underline{

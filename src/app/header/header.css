@@ -41,6 +41,7 @@
   position: fixed;
   top: 7px;
   right: 28px;
+  color: oklch(27.8% 0.033 256.848);
 }
 
 .hamburger {
@@ -92,7 +93,7 @@
   }
 
   .header {
-    background-color: #83979f;
+    background-color: #191f2c;
     color: white;
   }
 
