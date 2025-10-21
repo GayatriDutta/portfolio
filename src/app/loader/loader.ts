@@ -9,9 +9,5 @@ import { CommonModule } from '@angular/common';
 })
 export class Loader {
   loading = true;
-  ngOnInit() {
-    setTimeout(() => {
-      this.loading = false;
-    }, 100);
-  }
+  letters = 'LOADING'.split('');
 }

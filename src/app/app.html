@@ -1,8 +1,9 @@
-<app-header></app-header>
+<app-loader *ngIf="loading; else portfolio"></app-loader>
+<ng-template #portfolio><app-header></app-header>
 <app-home></app-home>
 <app-about id="about"></app-about>
 <app-skills id="skills"></app-skills>
 <app-projects id="projects"></app-projects>
 <app-experience id="exper"></app-experience>
 <app-contacts id="contact"></app-contacts>
-<app-footer></app-footer>
+<app-footer></app-footer></ng-template>

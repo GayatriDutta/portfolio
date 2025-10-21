@@ -1,31 +1,86 @@
-.cube-container {
-  perspective: 800px;
+@keyframes loader-progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes letter-bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+}
+
+@keyframes cube-rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
+
+.animate-loader-progress {
+  animation: loader-progress 2s ease-in-out;
+}
+
+.animate-letter-bounce {
+  animation: letter-bounce 1.0s ease-in-out ;
+}
+
+/* 3D Cube */
+.perspective-container {
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
 }
 
 .cube {
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 100px;
   position: relative;
   transform-style: preserve-3d;
-  animation: rotateCube 2s infinite linear;
+  animation: cube-rotate 3s linear infinite;
 }
 
-.face {
+.cube-face {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0.9;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #06b6d4;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(107, 114, 128, 0.2));
+  box-shadow: inset 0 0 30px rgba(6, 182, 212, 0.3);
 }
 
-.face-front  { transform: rotateY(0deg) translateZ(50px); }
-.face-back   { transform: rotateY(180deg) translateZ(50px); }
-.face-right  { transform: rotateY(90deg) translateZ(50px); }
-.face-left   { transform: rotateY(-90deg) translateZ(50px); }
-.face-top    { transform: rotateX(90deg) translateZ(50px); }
-.face-bottom { transform: rotateX(-90deg) translateZ(50px); }
+.cube-face.front {
+  transform: rotateY(180deg) translateZ(50px);
+}
 
-@keyframes rotateCube {
-  0%   { transform: rotateX(0deg) rotateY(0deg); }
-  50%  { transform: rotateX(180deg) rotateY(180deg); }
-  100% { transform: rotateX(360deg) rotateY(360deg); }
+.cube-face.back {
+  transform: rotateY(180deg) translateZ(50px);
+}
+
+.cube-face.right {
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+.cube-face.left {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.cube-face.top {
+  transform: rotateX(90deg) translateZ(50px);
+}
+
+.cube-face.bottom {
+  transform: rotateX(-90deg) translateZ(50px);
 }

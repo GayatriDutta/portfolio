@@ -17,33 +17,33 @@
     <div class="flex justify-center items-center " class="hamburger" (click)="showMenudropdown = !showMenudropdown"><img class="rounded-full w-10 pt-1" src="assets/hamburger.png"  ></div>
     <ul *ngIf="showMenu()" (click)="showMenudropdown = !showMenudropdown" class="flex gap-[3vw] justify-space menu" [ngClass]="{}">
       <li class="header-tab" >
-        <a routerLink="" class=" tab-pill text-cyan-700 font-bold" [ngClass]="{ scrolled: isScrolled }"
-          ><mat-icon class="py-1 pr-3">home</mat-icon> Home</a
+        <a routerLink="" class=" tab-pill text-cyan-500 border-b-1 font-bold" [ngClass]="{ scrolled: isScrolled }"
+          > Home</a
         >
       </li>
       <li class="header-tab">
-        <a routerLink="" fragment="about" class="tab-pill text-cyan-500 font-bold" [ngClass]="{ scrolled: isScrolled }"
-          ><mat-icon class="py-1 pr-3">person</mat-icon>About</a
+        <a routerLink="" fragment="about" class="tab-pill text-cyan-500 border-b-1 font-bold" [ngClass]="{ scrolled: isScrolled }"
+          >About</a
         >
       </li>
       <li class="header-tab">
-        <a routerLink="" fragment="skills" class=" tab-pill text-cyan-500 font-bold" [ngClass]="{ scrolled: isScrolled }"
-          ><mat-icon class="py-1 pr-3">build</mat-icon>Skills</a
+        <a routerLink="" fragment="skills" class=" tab-pill text-cyan-500 border-b-1 font-bold" [ngClass]="{ scrolled: isScrolled }"
+          >Skills</a
         >
       </li>
       <li class="header-tab">
-        <a routerLink="" fragment="projects" class=" tab-pill text-cyan-500 font-bold" [ngClass]="{ scrolled: isScrolled }"
-          ><mat-icon class="py-1 pr-3">work</mat-icon>Projects</a
+        <a routerLink="" fragment="projects" class=" tab-pill text-cyan-500 border-b-1 font-bold" [ngClass]="{ scrolled: isScrolled }"
+          >Projects</a
         >
       </li>
       <li class="header-tab">
-        <a routerLink="" fragment="exper" class=" tab-pill text-cyan-500 font-bold" [ngClass]="{ scrolled: isScrolled }"
-          ><mat-icon class="py-1 pr-3">work</mat-icon>Experience</a
+        <a routerLink="" fragment="exper" class=" tab-pill text-cyan-500 border-b-1 font-bold" [ngClass]="{ scrolled: isScrolled }"
+          >Experience</a
         >
       </li>
       <li class="header-tab">
-        <a routerLink="" fragment="contact" class="tab-pill text-cyan-500 font-bold" [ngClass]="{ scrolled: isScrolled }"
-          ><mat-icon class="py-1 pr-3"> contacts</mat-icon>Contact</a
+        <a routerLink="" fragment="contact" class="tab-pill text-cyan-500 border-b-1" [ngClass]="{ scrolled: isScrolled }"
+          >Contact</a
         >
       </li>
     </ul>

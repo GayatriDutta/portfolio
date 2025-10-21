@@ -1,18 +1,32 @@
-<div *ngIf="loading" class="fixed inset-0 bg-white/50 w-full h-full z-50 flex flex-col items-center justify-center bg-white dark:bg-gray-900">
-  <!-- 3D Cube Container -->
-  <div class="cube-container w-24 h-24 perspective-1000">
-    <div class="cube w-full h-full">
-      <div class="face face-front bg-blue-500"></div>
-      <div class="face face-back bg-green-500"></div>
-      <div class="face face-right bg-purple-500"></div>
-      <div class="face face-left bg-pink-500"></div>
-      <div class="face face-top bg-yellow-400"></div>
-      <div class="face face-bottom bg-indigo-500"></div>
+<div
+  class="fixed inset-0 bg-gradient-to-br from-gray-400 via-gray-600 to-gray-900 flex items-center justify-center z-50"
+>
+  <div class="text-center">
+    <div class="perspective-container mb-12">
+      <div class="cube">
+        <div class="cube-face front"></div>
+        <div class="cube-face back"></div>
+        <div class="cube-face right"></div>
+        <div class="cube-face left"></div>
+        <div class="cube-face top"></div>
+        <div class="cube-face bottom"></div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center gap-6 mb-8">
+      <span
+        *ngFor="let letter of letters; let index = index"
+        [ngStyle]="{ animationDelay: index * 0.1 + 's' }"
+        class="text-4xl font-bold text-cyan-400 animate-letter-bounce"
+      >
+        {{ letter }}
+      </span>
+    </div>
+
+    <div class="w-64 h-1 bg-gray-700 rounded-full overflow-hidden mx-auto">
+      <div
+        class="h-full bg-gradient-to-r from-gray-500 via-cyan-400 to-cyan-500 animate-loader-progress"
+      ></div>
     </div>
   </div>
-
-  <!-- Loader text -->
-  <p class="mt-6 text-gray-700 dark:text-gray-200 text-lg font-semibold animate-pulse">
-    Loading portfolio...
-  </p>
 </div>
